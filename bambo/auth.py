@@ -55,7 +55,7 @@ def login():
             session.clear()
             session['user_id'] = user['id']
             return redirect(url_for('index'))
-        flah(error)
+        flash(error)
     return render_template('auth/login.html')
 
 @bp.before_app_request
@@ -72,7 +72,7 @@ def load_logged_in_user():
 @bp.route('/logout')
 def logout():
     session.clear()
-    return redirect(url_for('login'))
+    return redirect(url_for('index'))
 
 def login_required(view):
     @functools.wraps(view)

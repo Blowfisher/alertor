@@ -1,0 +1,4 @@
+include bambo/schema.sql
+graft bambo/static
+graft bambo/template
+global-exclude *.pyc
