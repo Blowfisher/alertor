@@ -1,2 +1,2 @@
 # alertor
-autormate recovery alert
+A Flask demo
